@@ -1,0 +1,56 @@
+html, body, div, ul, li, span, p, a img, form, frameset, frame,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+#xtitle {
+    height: 58px;
+    line-height: 58px;
+    margin-left: 50px;
+    text-align: left;
+    font-family: arial, serif, fixedsys;
+    font-size: 18px;
+}
+.breadcumb {
+    line-height: 50px;
+    font-size: 16px;
+}
+.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}
+.x-input-sm {
+    width: 100%;
+}
+.buttonX, .submitX {
+    color: #292b2c;
+    background-color: #ddd;
+    border-color: #ccc;
+}
+.buttonX, .submitX {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.buttonX:hover, .submitX:hover {
+    color: #292b2c;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
