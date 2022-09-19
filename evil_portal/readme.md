@@ -1,6 +1,10 @@
-# Evil Portal
+# Evil Portal (Evil Twin Attack)
 Para mis auditorias a redes inalambricas utilizo la herramienta WEF (WiFi Exploitation Framework) para crear mi Access Point y usar mis propios diseños web para obtener datos.
 
+### Observaciones
+El portal no abrirá aunque se conecten al AP (Access Point) si se está utilizando el puerto 80.
+- No utilizar un servidor local mientras se audita ya que el servidor local utiliza el puerto 80
+- No abre por default el portal en iPhone
 
 ## Creación de nueva plantilla
 Se necesitan 3 componentes clave:
